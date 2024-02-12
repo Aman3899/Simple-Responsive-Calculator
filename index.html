@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1">
+        <h1>Add Two Number</h1><br><br>
+
+        <label for="num1">&nbsp;&nbsp;&nbsp;Enter 1st No. &nbsp;</label>
+        <input type="text" name="num1" id="num1"><br><br>
+
+        <label for="num2">&nbsp;&nbsp;&nbsp;Enter 2nd No.</label>
+        <input type="text" name="num2" id="num2"><br><br>
+
+        <label for="num2">&nbsp;&nbsp;&nbsp;Results are :&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="res" id="res" readonly><br><br>
+
+        <button id="addBtn" onclick="addNumbers()">Add</button>
+        <button id="subBtn" onclick="subNumbers()">Substract</button>
+        <button id="mulBtn" onclick="mulNumbers()">Multiply</button>
+        <button id="divBtn" onclick="divNumbers()">Divide</button>
+        <button id="modBtn" onclick="modNumbers()">Modulo</button>
+        <button id="resetBtn" onclick="reset()">Reset</button>
+    </div>
+
+    <div id="div2">
+        <h1>History</h1><hr>
+        <div id="history"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
